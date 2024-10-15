@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body
+{
+    background-color: rgb(18, 18, 18);
+    overflow-x: hidden;
+}
+nav {
+    background-color:transparent; 
+    padding: 10px 0; 
+    text-align: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+
+li {
+    display: inline; 
+}
+
+li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    color: #969696;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+li a:hover {
+    color: #F76D01; 
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+section h1
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 6vmin;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #F76D01;
+    text-align: center;
+}
+section .additional
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    color: #969696;
+    width: 90vw;
+    letter-spacing: 1px;
+    position: relative;
+    left: 5vw;
+}
+section .languages
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section .languages div
+{
+    align-items: center;
+    text-align: center;
+}
+section .languages div h2
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    color: #969696;
+}
+section .languages div svg
+{
+   fill: white;
+   width: 7vmin;
+}
+section .education
+{
+    position: relative;
+    left: 5vw;
+}
+section .education h2
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 4vmin;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #969696;
+}
+section .education p
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+}
+section .extracurricular p
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    position: relative;
+    left: 5vw;
+
+}
+.certificates
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.certificates img
+{
+    width: 30vw;
+    margin-bottom: 5vh;   
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    width: 10vmin;
+}
+
+@media (max-width: 1025px) {
+    
+
+    nav {
+        background-color: #1C1B1B;
+        padding: 0%;
+        position: fixed;
+        justify-content: center;
+        border-bottom-right-radius: 50%;
+      z-index: 99999;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+        min-height: 40vh;
+        margin-top: -2000px;
+        transition: all 0.5s ease;
+        z-index: 999999;
+
+    }
+
+    nav li {
+        margin: 30px auto;
+    }
+
+    nav ul li a {
+        font-size: 5vmin;
+    }
+
+
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        display: block;
+        z-index: 3;
+    }
+    section
+    {
+        position: relative;
+        top: 20vh;
+    }
+    .certificates
+    {
+        flex-direction: column;
+    }
+    .certificates img
+    {
+        position: relative;
+        left: 5vw;
+        width: 90vw;
+    }
+    section .additional
+    {
+        letter-spacing: 2px;
+        font-size: 4vmin;
+    }
+    section .education h2
+    {
+        font-size: 5vmin;
+        width: 90vw;
+    }
+    section .education p
+    {
+        width: 90vw;
+        font-size: 4vmin;
+    }
+    section .extracurricular p
+    {
+        font-size: 4vmin;
+    }
+}

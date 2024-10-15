@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body
+{
+    background-color: rgb(18, 18, 18);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+nav {
+    background-color:transparent; 
+    padding: 10px 0; 
+    text-align: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+
+li {
+    display: inline; 
+}
+
+li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    color: #969696;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+li a:hover {
+    color: #F76D01; 
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+section
+{
+    text-align: center;
+    align-items: center;
+}
+section div
+{
+    width: 70vw;
+    margin-bottom: 10vh;
+}
+section .hleft
+{
+    position: relative;
+    left: 15vw;
+    text-align: left;
+}
+section .hright
+{
+  position: relative;
+  left: 15vw;
+  text-align: right;
+  
+}
+section div h1
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 5vmin;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #F76D01;
+}
+section div p
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #969696;
+}
+section div a
+{
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    font-size: 3vmin;
+    width: 12vw;
+    text-align: center;
+    font-weight: 400;
+    color: #969696;
+    padding: 2vmin;
+    border: 1px solid #969696;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    width: 10vmin;
+}
+
+@media (max-width: 1025px) {
+
+
+    nav {
+        background-color: #1C1B1B;
+        padding: 0%;
+        position: fixed;
+        justify-content: center;
+        border-bottom-right-radius: 50%;
+      z-index: 999999999;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+        min-height: 40vh;
+        margin-top: -2000px;
+        transition: all 0.5s ease;
+        z-index: 999999;
+
+    }
+
+    nav li {
+        margin: 30px auto;
+    }
+
+    nav ul li a {
+        font-size: 5vmin;
+    }
+
+
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        display: block;
+        z-index: 3;
+    }
+    section
+    {
+        position: relative;
+        top: 20vh;
+        
+    }
+    section div
+    {
+        width: 90vw;
+    }
+    section .hright
+    {
+        left: 0vw;
+    }
+    section .hleft
+    {
+        left: 5vw;
+    }
+    section div p
+    {
+        letter-spacing: 2px;
+        font-size: 4vmin;
+    }
+}

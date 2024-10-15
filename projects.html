@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <nav>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Credentials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="list.svg" class="menu-btn">
+    </nav>
+    <script>
+        const menubtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.navlinks');
+        const body = document.querySelector('body');
+      
+        menubtn.addEventListener('click', () => {
+          navlinks.classList.toggle('mobile-menu');
+        });
+      
+        body.addEventListener('click', (event) => {
+          if (!event.target.closest('.menu-btn') && !event.target.closest('.navlinks li')) {
+            navlinks.classList.remove('mobile-menu');
+          }
+        });
+      
+        // Add click event listener to all anchor tags within the navbar
+        const navLinks = document.querySelectorAll('.navlinks a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // Close the mobile menu when a link is clicked
+            navlinks.classList.remove('mobile-menu');
+          });
+        });
+      </script>
+    <section>
+        <div class="hleft">
+            <h1>ScribeSense: Form Responses Evaluation Platform</h1>
+            <p>I'm currently developing a groundbreaking platform that revolutionizes classroom assignments. Students submit their work online, and our platform provides personalized insights on areas for improvement. Simultaneously, it generates individual reports for teachers, highlighting student progress and areas needing attention</p>
+        </div>
+        <div class="hright">
+            <h1>HEALPRO</h1>
+            <p>Web application that combines a powerful Random Forest Classifier for predicting heart disease with an intuitive medicine search engine. The project encompasses dynamic user interfaces, a responsive web app design, and user-friendly interactions.</p>
+            <a href="https://github.com/Ishaan-Malhotra90/HEALPRO-Heart-Evaluation-and-Analysis-with-Medication-Profiling-and-Risk-Overview-">Download Project</a>
+        </div>
+        <div class="hleft">
+            <h1>Face Detection</h1>
+            <p>I'm currently developing a face detection attendance system tailored for gyms. This cutting-edge technology simplifies check-ins and enhances security for gyms.</p>
+        </div>
+        <div class="hright">
+            <h1>Donation System</h1>
+            <p>It is a user-friendly "DEMO TKINTER" app that connects donors to diverse organizations addressing critical issues. With a few clicks, users can make secure donations and stay engaged with impact updates, fostering positive change effortlessly.</p>
+            <a href="https://github.com/Ishaan-Malhotra90/Donation-System">Download Project</a>
+        </div>
+        <div class="hleft">
+            <h1>Evolve AI Website</h1>
+            <p>As the Tech Head of Evolve AI, a student run university club, I'm spearheading the development of our website to amplify our impact in the tech community. From organizing hackathons to hosting workshops, Evolve AI is at the forefront of fostering innovation and collaboration. Stay tuned as we continue to evolve and empower the next generation of AI enthusiasts through our online platform.</p>
+        </div>
+        <div class="hright">
+            <h1>Factoid</h1>
+            <p>I'm excited to showcase Factoid, a website I've developed where you can delve into fascinating space theories about planets and explore the solar system in 3D.</p>
+            <a href="https://ishaan-malhotra90.github.io/space/index.html">Visit Site</a>
+        </div>
+    </section>
+</body>
+</html>

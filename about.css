@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body
+{
+    background-color: rgb(18, 18, 18);
+    overflow-x: hidden;
+}
+nav {
+    background-color:transparent; 
+    padding: 10px 0; 
+    text-align: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+
+li {
+    display: inline; 
+}
+
+li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    color: #969696;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+li a:hover {
+    color: #F76D01; 
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section .image
+{
+    border-radius: 20px;
+    overflow: hidden;
+}
+section img
+{
+    border-radius: 2px;
+    width: 40vw;
+    height: 60vh;
+}
+.content
+{
+
+    width: 50vw;
+}
+.content h1
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 6vmin;
+    font-weight: 800;
+    text-align: center;
+    color: #F76D01;
+    letter-spacing: 1px;
+}
+.content p
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 3vmin;
+    font-weight: 400;
+    position: relative;
+    color: #969696;
+    width: 50vw;
+    letter-spacing: 1px;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    width: 10vmin;
+}
+@media (max-width: 1025px) {
+    
+ 
+    nav {
+        background-color: #1C1B1B;
+        padding: 0%;
+        position: fixed;
+        justify-content: center;
+        border-bottom-right-radius: 50%;
+        z-index: 99999;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+        min-height: 40vh;
+        margin-top: -2000px;
+        transition: all 0.5s ease;
+        z-index: 999999;
+
+    }
+
+    nav li {
+        margin: 30px auto;
+    }
+
+    nav ul li a {
+        font-size: 5vmin;
+    }
+
+
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        display: block;
+        z-index: 3;
+    }
+    section
+    {
+        position: relative;
+        top: 20vh;
+        flex-direction: column;
+    }
+    section img
+    {
+        width: 90vw;
+        height: 50vh;
+    }
+    .content
+    {
+        text-align: center;
+        width: 90vw;
+    }
+    .content p
+    {
+        letter-spacing: 2px;
+        font-size: 4vmin;
+        width: 90vw;
+    }
+}

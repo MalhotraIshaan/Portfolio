@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Credentials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="  list.svg" class="menu-btn">
+    </nav>
+    <script>
+        const menubtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.navlinks');
+        const body = document.querySelector('body');
+      
+        menubtn.addEventListener('click', () => {
+          navlinks.classList.toggle('mobile-menu');
+        });
+      
+        body.addEventListener('click', (event) => {
+          if (!event.target.closest('.menu-btn') && !event.target.closest('.navlinks li')) {
+            navlinks.classList.remove('mobile-menu');
+          }
+        });
+      
+        // Add click event listener to all anchor tags within the navbar
+        const navLinks = document.querySelectorAll('.navlinks a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // Close the mobile menu when a link is clicked
+            navlinks.classList.remove('mobile-menu');
+          });
+        });
+      </script>
+    <section>
+        <div class="content">
+            <h1>A Bit About Me</h1>
+            <p>
+                Yo! I'm Ishaan Malhotra, just a student cruising through the AI and data science universe at Chitkara University. Catch me in the CSE department, where I'm soaking up all things like a sponge.<br><br>
+    
+                When I'm not in lecture mode, you'll find me over on LinkedIn, dishing out notes and nerdy insights on AI and ML. And yeah, you can bet I'm powered by a solid dose of coffee!<br><br>
+                
+                Oh, and did I mention I'm a space geek too? From pondering the mysteries of the cosmos to delving into the depths of data, I'm all about exploring the unknown.<br><br>
+                
+                And hey, speaking of curiosity, I'm also all about that web dev life. From crafting cool sites to diving into the nitty-gritty, I'm up for any tech adventure.<br><br>
+                
+                So, if you're down to chat about data, code, or just swap science memes over a cup of coffee, hit me up! Let's geek out together and make some tech magic happen.
+            </p>
+        </div>
+        <div class="image">
+            <img src="giphy.gif" alt="photo">
+        </div>
+    </section>
+</body>
+</html>
